@@ -1,4 +1,6 @@
 <template>
+<div>
+
   <p class="lead">
  <audio ref="song">
   <source src="~assets/the-entertainer.mp3" type="audio/mpeg">
@@ -8,6 +10,18 @@
           </v-btn>
           {{ name.toLowerCase() }}
         </p>
+
+<v-container style="max-width: 50%">
+<p :style="style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
+</p>
+</v-container>
+
+
+        
+</div>
 </template>
 
 <script>
@@ -26,7 +40,7 @@ export default {
             if (this.playing) {
                 return "mdi-stop";
             }
-            return "mdi-play";
+            return "mdi-play-outline";
         },
         playPause() {
             
@@ -35,12 +49,10 @@ export default {
                 this.$emit('play', this.id);
                 this.playing = true;
                 this.$refs.song.play();
+                this.$refs.song.currentTime = 0;
             }
             else {
-                console.log("stop playing!")
-                this.playing = false;
-                this.$refs.song.pause();
-                this.$refs.song.currentTime = 0;
+                this.stop();
             }
 
             
@@ -49,8 +61,30 @@ export default {
         stop() {
             this.playing = false;
             this.$refs.song.pause();
+            this.$refs.song.currentTime = 0;
         }
     },
+    computed: {
+        style() {
+            if (!this.playing) {
+                return {
+                maxHeight: "0px",
+                textOverflow: "clip",
+                overflow: "hidden",
+                fontSize: "20px",
+                transitionDuration: "1s"
+
+            }
+            }
+            return {
+                maxHeight: "500px",
+                textOverflow: "clip",
+                overflow: "hidden",
+                fontSize: "20px"
+            }
+            
+        }
+    }
     
 
 
@@ -58,6 +92,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

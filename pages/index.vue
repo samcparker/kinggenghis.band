@@ -16,7 +16,7 @@
              <h1 class="hidden-sm-and-up xs">{{ getTitle }}</h1>
              <h1 class="hidden-xs-only">{{ getTitle }}</h1>
 
-             <div>
+             <div class="mt-10">
                   <track-list></track-list>
                </div>
               
@@ -41,7 +41,8 @@ export default {
       title: "King Genghis",
       currentTitle: "",
       chars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!\"£$%^&*()@'#~;:><.,?`¬¥¢¡¤¶ µ¼½¾",
-      finished: false
+      finished: false,
+      titles: ["King Genghis", "Genghis King", "Ging Kenghis"]
     }
   },
   computed: {
@@ -83,7 +84,13 @@ export default {
       //   }, 3000);
       setInterval(() => { 
           this.updateText() ;
-}, 70);
+}, 100);
+  var selected = 0;
+setInterval(() => {
+  this.title = this.titles[selected];
+  selected ++;
+  selected = selected % this.titles.length;
+}, 10000);
     })
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
         <play-track ref="audioTrack" v-on:play="trackPlay" v-for="(track, index) in tracks" :key="index" :name="track.name" :playing="track.playing" :id="index"></play-track>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
                     playing: false
                 },
                 {
-                    name: "Push, Push, Push!",
+                    name: "Song Name 1",
                     playing: false
                 },
                 {
