@@ -12,14 +12,11 @@
       align="center"
       style="height: 100%;" >
           <v-col height="100">
-             <h1 :style="style">{{ getTitle }}</h1>
+
+             <h1 class="hidden-sm-and-up xs">{{ getTitle }}</h1>
+             <h1 class="hidden-xs-only">{{ getTitle }}</h1>
+
              <div>
-                
-                <!-- <p class="lead" :style="pstyle"><v-btn icon><v-icon large>mdi-play</v-icon></v-btn> other song</p>
-                <p class="lead" :style="pstyle"><v-btn icon><v-icon large>mdi-play</v-icon></v-btn> other song</p>
-                <p class="lead" :style="pstyle"><v-btn icon><v-icon large>mdi-play</v-icon></v-btn> other song</p>
-                <p class="lead" :style="pstyle"><v-btn icon><v-icon large>mdi-play</v-icon></v-btn> other song</p>
-                <p class="lead" :style="pstyle"><v-btn icon><v-icon large>mdi-play</v-icon></v-btn> other song</p> -->
                   <track-list></track-list>
                </div>
               
@@ -43,7 +40,7 @@ export default {
     return {
       title: "King Genghis",
       currentTitle: "",
-      chars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!\"£$%^&*()",
+      chars: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!\"£$%^&*()@'#~;:><.,?`¬¥¢¡¤¶ µ¼½¾",
       finished: false
     }
   },
@@ -51,43 +48,23 @@ export default {
     getTitle() {
       return this.currentTitle;      
     },
-    style() {
-      if (this.finished) {
-      return {
-        color: "white",
-      }
-      }
-      return {
-        transitionDuration: "1s",
-        color: "white",
-      }
-
-    },
-    
-    pstyle() {
-      if (this.finished) {
-      return {
-        opacity: 1,
-        fontSize: "40px"
-      }
-      }
-      return {
-        transitionDuration: "1s",
-        opacity: 0,
-        fontSize: "0px"
-      }
-    }
+  
   },
   methods: {
     updateText() {
 
       for (var i = 0; i < this.currentTitle.length; i++) {
-        if (Math.random() * 100 > 96) {
+        var rand = Math.random() * 1000;
+        if (rand > 995) {
+          this.currentTitle = this.currentTitle.substring(0, i) + String.fromCharCode(Math.floor(Math.random() * 5000 + 200)) + this.currentTitle.substring(i + 1);
+        }
+        else if (rand > 900) {
           // console.log(this.currentTitle);
           this.currentTitle = this.currentTitle.substring(0, i) + this.title[i] + this.currentTitle.substring(i + 1);
         }
         else if (this.currentTitle[i] != this.title[i]) {
-          this.currentTitle = this.currentTitle.substring(0, i) + this.chars[Math.floor(Math.random() * this.chars.length)] + this.currentTitle.substring(i + 1);
+          // this.currentTitle = this.currentTitle.substring(0, i) + this.chars[Math.floor(Math.random() * this.chars.length)] + this.currentTitle.substring(i + 1);
+          this.currentTitle = this.currentTitle.substring(0, i) + String.fromCharCode(Math.floor(Math.random() * 5000 + 200)) + this.currentTitle.substring(i + 1);
         }
 
  
@@ -105,11 +82,8 @@ export default {
       //   console.log(this.currentTitle)
       //   }, 3000);
       setInterval(() => { 
-        if (this.title != this.currentTitle)  {
           this.updateText() ;
-        } else {
-          setTimeout(() => {this.finished = true}, 300)
-        }}, 70);
+}, 70);
     })
   }
 }
@@ -125,6 +99,11 @@ p {
 .vrow {
   transition-duration: 1s;
 }
+.xs {
+  font-size: 95px;
+
+}
+
 h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
