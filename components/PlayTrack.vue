@@ -12,7 +12,7 @@
         </p>
 
 <v-container style="max-width: 1000px">
-<div :style="style" ref="lyrics">
+<div :style="style" ref="lyrics" class="mb-4">
     <nuxt-content :document="doc"/>
 </div>
 </v-container>
