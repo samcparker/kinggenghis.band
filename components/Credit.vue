@@ -20,6 +20,7 @@ p {
     z-index: 100;
     font-size: 15px;
     padding: 0px 10px 0px 10px;
+    opacity: 0.5;
 }
 
 p:hover {
