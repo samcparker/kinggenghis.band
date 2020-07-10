@@ -63,10 +63,10 @@ export default {
 
       for (var i = 0; i < this.currentTitle.length; i++) {
         var rand = Math.random() * 1000;
-        if (rand > 995) {
-          this.currentTitle = this.currentTitle.substring(0, i) + String.fromCharCode(Math.floor(Math.random() * 5000 + 200)) + this.currentTitle.substring(i + 1);
-        }
-        else if (rand > 900) {
+        // if (rand > 995) {
+        //   this.currentTitle = this.currentTitle.substring(0, i) + String.fromCharCode(Math.floor(Math.random() * 5000 + 200)) + this.currentTitle.substring(i + 1);
+        // }
+        if (rand > 900) {
           // console.log(this.currentTitle);
           this.currentTitle = this.currentTitle.substring(0, i) + this.title[i] + this.currentTitle.substring(i + 1);
         }
@@ -81,29 +81,22 @@ export default {
   },
   mounted: function () {
     this.$nextTick(function () {
-                 this.currentTitle = "";
-        for (var i = 0; i < this.title.length; i++) {
-          this.currentTitle += this.chars[Math.floor(Math.random() * this.chars.length)];
-        }
-      // setTimeout(() => { 
-      //   this.currentTitle = "poop"; 
-      //   console.log(this.currentTitle)
-      //   }, 3000);
+      this.currentTitle = "";
+      for (var i = 0; i < this.title.length; i++) {
+        this.currentTitle += this.chars[Math.floor(Math.random() * this.chars.length)];
+      }
       setInterval(() => { 
-          this.updateText() ;
-}, 100);
-  var selected = 0;
-setInterval(() => {
-  this.title = this.titles[selected];
-  selected ++;
-  selected = selected % this.titles.length;
-}, 10000);
-    })
-  }
+          this.updateText();
+      }, 100);
+    });
+  },
 }
 </script>
 
 <style>
+html {
+  overflow-y: hidden;
+}
 p { 
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
@@ -124,11 +117,12 @@ h1 {
   transition-duration: 1s;
 }
 #myVideo {
-  position: fixed;
-  right:0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+   position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
 }
 
 /* Add some content at the bottom of the video/page */
@@ -141,4 +135,23 @@ h1 {
   padding: 20px;
   overflow-y: auto;
 }
+
+/* .video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+} */
 </style>
