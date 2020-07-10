@@ -8,18 +8,13 @@
       <v-btn @click="playPause" icon large>
           <v-icon large>{{ getIcon() }}</v-icon>
           </v-btn>
-          {{ name.toLowerCase() }}
+          {{ doc.name.toLowerCase() }}
         </p>
 
-<v-container style="max-width: 50%">
-<p :style="style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias, libero praesentium quis, aliquid distinctio a ab itaque, repudiandae dolor temporibus sed officiis recusandae nostrum nesciunt eveniet asperiores neque at.
-</p>
+<v-container style="max-width: 1000px">
+<div :style="style"><nuxt-content :document="doc"/>
+</div>
 </v-container>
-
-
         
 </div>
 </template>
@@ -32,19 +27,23 @@ export default {
         }
     },
     props: {
-        name: String,
-        id: Number
+        doc: Object
     },
     methods: {
         getIcon() {
+            if (this.$refs.song && this.$refs.song.waiting) { // included to show loading symbol if song is loading but not sure if works
+                return "mdi-loading";
+            }
             if (this.playing) {
                 return "mdi-stop";
             }
-            return "mdi-play-outline";
+            if (!this.playing) {
+                return "mdi-play-outline";
+            }
+            
+            
         },
         playPause() {
-            
-            
             if (this.$refs.song.paused) {
                 this.$emit('play', this.id);
                 this.playing = true;
@@ -68,19 +67,22 @@ export default {
         style() {
             if (!this.playing) {
                 return {
+                    color: "red",
                 maxHeight: "0px",
                 textOverflow: "clip",
-                overflow: "hidden",
-                fontSize: "20px",
+                overflow: "scroll", 
+                
+                fontSize: "10px",
                 transitionDuration: "1s"
 
-            }
+                }
             }
             return {
+                color: "red",
                 maxHeight: "500px",
                 textOverflow: "clip",
-                overflow: "hidden",
-                fontSize: "20px"
+                overflow: "scroll", 
+                fontSize: "10px"
             }
             
         }
@@ -93,5 +95,7 @@ export default {
 </script>
 
 <style scoped>
-
+.nuxt-content {
+    font-size: 10px;
+}
 </style>

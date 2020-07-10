@@ -17,7 +17,7 @@
              <h1 class="hidden-xs-only">{{ getTitle }}</h1>
 
              <div class="mt-10">
-                  <track-list></track-list>
+                  <track-list :tracks="tracks"></track-list>
                </div>
               
              </v-col>
@@ -32,7 +32,14 @@
 <script>
 import TrackList from '@/components/TrackList.vue';
 export default {
-
+  async asyncData ({ $content }) {
+    console.log("running");
+    const tracks = await $content('', {deep: true}).where({dir: '/tracks'}).sortBy("trackNumber", "asc").fetch()
+    tracks.forEach(element => {
+       console.log(element);
+    });
+    return { tracks };
+  },
   components: {
     TrackList
   },
