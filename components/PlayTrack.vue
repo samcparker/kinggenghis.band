@@ -8,7 +8,7 @@
       <v-btn @click="playPause" icon large>
           <v-icon large>{{ getIcon() }}</v-icon>
           </v-btn>
-          {{ doc.name.toLowerCase() }}
+          {{ doc.trackNumber + ". " + doc.name.toLowerCase() }}
         </p>
 
 <v-container style="max-width: 1000px">
@@ -74,9 +74,9 @@ export default {
                 maxHeight: "0px",
                 textOverflow: "clip",
                 overflowY: "scroll", 
-                
+                maxWidth: "100%",
                 fontSize: "10px",
-                transitionDuration: "1s"
+                transitionDuration: "1s",
 
                 }
             }
