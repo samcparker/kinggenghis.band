@@ -1,7 +1,7 @@
 ---
 name: Mao's Great Famine
 trackNumber: 1
-src: ""
+src: "/songs/track-1.mp3"
 ---
 Lyrics to Mao's Great Famine:
 Duis reprehenderit ea ipsum nisi do ullamco laboris. Id aliqua laboris pariatur prariatur tempor mollit Lorem quis fugiat reprehenderit labore pariatur. Voluptate qui ex elit labore exercitation amet. Reprehenderit sunt pariatur aliqua deserunt aliqua qui Lorem aliquip veniam sinoident incididunt excepteur esse cupidatat non. Veniam sint non aliqua pt Lorem. Ea ea id ipsum ea magna ea officia nulla anim Lorem qui.

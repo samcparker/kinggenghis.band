@@ -1,7 +1,7 @@
 ---
 name: what's this?
 trackNumber: 3
-src: ""
+src: "/songs/track-3.mp3"
 ---
 Lyrcs to 'what's this?'
 Duis reprehendert ea ipsum nisi do ullamco laboris. Id aliqua laboris pariatur proident incididunt excepteur esse cupidatat non. Veniam sint non aliqua pariatur tempor mollit Lorem 

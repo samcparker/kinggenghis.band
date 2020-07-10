@@ -1,7 +1,7 @@
 ---
 name: even more songs
 trackNumber: 2
-src: ""
+src: "/songs/track-2.mp3"
 ---
 Lyrics to 'Even More Song'
 Duis reprehenderit ea ipsum nisi do ullamco laboris. Id aliqua laboris pariatur proident incididunt excepteur esse cupidatat non. Veniam sint non aliqua pariatur tempor mollit Lorem quis fugiat reprehenderit labore pariatur. Voluptate qui ex elit labore exercitation amet. Reprehenderit sunt pariatur aliqua deserunt aliqua qui Lorem aliquip veniam sint Lorem. Ea ea id ipsum ea magna ea officia nulla anim Lorem qui.

@@ -3,7 +3,7 @@
 
   <p class="lead">
  <audio ref="song">
-  <source src="~assets/the-entertainer.mp3" type="audio/mpeg">
+  <source :src="doc.src" type="audio/mpeg">
 </audio> 
       <v-btn @click="playPause" icon large>
           <v-icon large>{{ getIcon() }}</v-icon>
@@ -12,7 +12,8 @@
         </p>
 
 <v-container style="max-width: 1000px">
-<div :style="style"><nuxt-content :document="doc"/>
+<div :style="style" ref="lyrics">
+    <nuxt-content :document="doc"/>
 </div>
 </v-container>
         
@@ -58,6 +59,7 @@ export default {
             
         },
         stop() {
+            this.$refs.lyrics.scrollTop = 0;
             this.playing = false;
             this.$refs.song.pause();
             this.$refs.song.currentTime = 0;
@@ -67,10 +69,11 @@ export default {
         style() {
             if (!this.playing) {
                 return {
-                    color: "red",
+                    color: "white",
+                    opacity: 0,
                 maxHeight: "0px",
                 textOverflow: "clip",
-                overflow: "scroll", 
+                overflowY: "scroll", 
                 
                 fontSize: "10px",
                 transitionDuration: "1s"
@@ -78,11 +81,13 @@ export default {
                 }
             }
             return {
-                color: "red",
+                opacity: 1,
+                color: "white",
                 maxHeight: "500px",
                 textOverflow: "clip",
-                overflow: "scroll", 
-                fontSize: "10px"
+                overflowY: "scroll", 
+                fontSize: "10px",
+                transitionDuration: "1s"
             }
             
         }
