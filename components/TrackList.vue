@@ -14,9 +14,22 @@ export default {
     },
     methods: {
         trackPlay: function (id) {
+            console.log(id);
+            id = id % this.$refs.audioTrack.length;
             this.$refs.audioTrack.forEach(element => {
                 element.stop();
-            })
+                console.log(element.id);
+                if (element.id == id) {
+                    element.play();
+                }
+            });
+            // this.$refs.audioTrack.forEach(element => {
+            //     element.stop();
+                
+            //     if (id == element.getId()) {
+            //         element.play();
+            //     }
+            // })
         }
 
     },

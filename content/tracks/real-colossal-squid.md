@@ -3,16 +3,10 @@ name: Real Colossal Squid
 trackNumber: 1
 src: "/songs/01-Real-Colossal-Squid.mp3"
 ---
-Eu ea voluptate ipsum do ea veniam ex irure. Tempor est mollit irure labore consequat dolor excepteur ullamco sint. Exercitation do magna cupidatat sint Lorem fugiat velit reprehenderit est duis ut in. Exercitation incididunt Lorem quis et cillum. Proident Lorem enim ullamco culpa nostrud aute eu ex.
+Squid are cephalopods in the superorder Decapodiformes with elongated bodies, large eyes, eight arms and two tentacles. Like all other cephalopods, squid have a distinct head, bilateral symmetry, and a mantle. They are mainly soft-bodied, like octopuses, but have a small internal skeleton in the form of a rod-like gladius or pen, made of chitin.
 
-Elit esse laborum aliqua commodo sint amet. Dolore qui aliqua aliquip duis culpa sint nostrud. Ex commodo aliqua Lorem ut pariatur aute. Eiusmod aliquip laborum est eu ullamco. Ipsum reprehenderit voluptate occaecat consectetur qui nulla nisi et ex incididunt. Anim fugiat est laboris ullamco occaecat dolore sunt.
+Squid diverged from other cephalopods during the Jurassic and occupy a similar role to teleost fish as open water predators of similar size and behaviour. They play an important role in the open water food web. The two long tentacles are used to grab prey and the eight arms to hold and control it. The beak then cuts the food into suitable size chunks for swallowing. Squid are rapid swimmers, moving by jet propulsion, and largely locate their prey by sight. They are among the most intelligent of invertebrates, with groups of Humboldt squid having been observed hunting cooperatively. They are preyed on by sharks, other fish, sea birds, seals and cetaceans, particularly sperm whales.
 
-Dolor officia laboris pariatur magna nostrud magna cupidatat magna id voluptate magna qui do qui. Ea esse mollit laboris est eiusmod occaecat culpa ad. Culpa mollit ea excepteur voluptate. Pariatur incididunt ad nisi irure ut elit excepteur magna ad. Eiusmod in consectetur veniam tempor. Enim elit reprehenderit ex anim id consectetur pariatur Lorem quis consectetur proident proident consectetur occaecat. Officia minim minim Lorem mollit proident officia dolor magna nulla irure.
+Squid can change colour for camouflage and signalling. Some species are bioluminescent, using their light for counter-illumination camouflage, while many species can eject a cloud of ink to distract predators.
 
-Occaecat eu eu veniam culpa labore cupidatat pariatur velit dolor sunt. Sint incididunt aliquip do consequat. Ad consectetur sunt amet cillum commodo aute mollit pariatur ea nisi aliqua est non. Cupidatat duis tempor id labore voluptate.
-
-Proident nulla officia culpa minim consequat voluptate sint ex. Sint aute excepteur esse ex voluptate adipisicing duis cillum. Exercitation dolore reprehenderit mollit eu incididunt. Enim ut officia tempor enim esse aliqua excepteur exercitation. Officia Lorem Lorem minim esse officia velit labore magna dolor velit nulla. Minim nulla incididunt velit exercitation laborum consectetur cillum elit aliquip exercitation. Eu pariatur sit culpa exercitation do minim minim.
-
-Incididunt laboris nostrud ad veniam eu sit est veniam laborum tempor eu. Anim magna pariatur minim reprehenderit enim est aliqua et incididunt proident. Enim amet ad enim sit ad incididunt anim dolor. Ea minim sint nostrud sit voluptate duis. Officia do minim voluptate velit culpa aliquip Lorem excepteur occaecat exercitation quis duis. Cillum veniam culpa reprehenderit adipisicing esse nulla ut amet. Adipisicing culpa fugiat culpa sint id eiusmod voluptate ut voluptate quis nostrud labore.
-
-
+Squid are used for human consumption with commercial fisheries in Japan, the Mediterranean, the southwestern Atlantic, the eastern Pacific and elsewhere. They are used in cuisines around the world, often known as "calamari". Squid have featured in literature since classical times, especially in tales of giant squid and sea monsters. 

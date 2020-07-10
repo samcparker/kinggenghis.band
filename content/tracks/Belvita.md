@@ -3,15 +3,51 @@ name: Belvita
 trackNumber: 5
 src: "/songs/05-Belvita.mp3"
 ---
-Lyrcs to 'what's this?'
-Duis reprehendert ea ipsum nisi do ullamco laboris. Id aliqua laboris pariatur proident incididunt excepteur esse cupidatat non. Veniam sint non aliqua pariatur tempor mollit Lorem 
-~?>,l;/
-quis fugiat reprehenderit labore pariatur. Voluptate qui ex elit labore exercitation amet. Reprehenderit sunt pariatur aliqua deserunt aliqua qui Lorem aliquip veniam sint Lorem. Ea ea id ipsum ea magna ea officia nulla anim Lorem qui.
+Belvita in the morning, Instant plus.
+Never will I buy synthetic drugs.
 
-Fugiat quis labore proident consequat. Officia cillum adipisicing irure anim aute dolore dolor in ad aute elit incididunt laborum. Aliqua laboris dolor consectetur mollit irure dolore.
+Belvita in the morning it's an organism plus.
+Taking the time just to make a fuss.
 
-Sint velit est nulla eu commodo. Dolor ipsum anim ut sunt deserunt duis elit dolore irure et duis deserunt dolor consequat. Officia magna deserunt ullamco consequat consequat mollit duis id velit. Occaecat esse culpa quis non aliqua fugiat voluptate ut elit cillum cillum velit.
+Belvita in the morning, Fresh Prince of Bell Air.
+Jaden Smith for four hours talking Times Square.
 
-Quis elit sit veniam consequat veniam anim minim in eiusmod. Officia anim irure Lorem ullamco aliquip. Mollit amet incididunt magna officia aliquip nostrud et magna sit ea cillum sunt officia sit. In officia aliquip adipisicing nisi non non magna proident fugiat id officia aliquip. Cupidatat cillum nostrud culpa cillum cillum in cillum.
 
-Enim consectetur anim fugiat elit. Incididunt elit minim nostrud Lorem proident non esse enim. Anim nulla nulla duis eiusmod officia. Reprehenderit cupidatat anim magna sint Lorem amet magna nostrud voluptate velit quis. Do veniam nisi minim dolor ad tempor cupidatat. Cillum deserunt ipsum officia voluptate deserunt sint mollit enim labore fugiat.
+Belvita in the morning, it's a crack of a snare.
+Will Smith for four hours, my living nightmare.
+
+Never, never, will I ever,
+never will I buy your instant plus.
+Never, never, will I ever,
+never will I buy synthetic drugs.
+
+When you say you're already and you say you're already and you say you're already there.
+When you say you're already and you say you're already and you say you're already there.
+
+Belvita in the morning and I see Bill Murray,
+Every day I'm living in Groundhog Day.
+
+Belvita in the morning and I see Will Smith.
+Taking the time it's a hit and miss.
+
+Belvita in the morning lost the will to Smith.
+Fresh prince of Bell Air, conspiracy myth.
+
+Belvita in the morning, my organism plus.
+Tell us goodbye, the instant drugs.
+
+Never, never, will I ever,
+never will I buy your instant plus.
+Never, never, will I ever,
+never will I buy your instant plus.
+
+When you say you're already and you say you're already and you say you're already there.
+When you say you're already and you say you're already and you say you're already there.
+
+Never, never.
+Never, never.
+
+You say you're already and you say you're already-
+You say you're already and you say you're already-
+
+

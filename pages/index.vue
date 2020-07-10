@@ -94,12 +94,13 @@ export default {
 </script>
 
 <style>
+
+
 html {
   overflow-y: hidden;
 }
 p { 
   font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
   transition-duration: 1s; 
   }
 
@@ -114,6 +115,7 @@ p {
 h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
+  font-weight: 100;
   transition-duration: 1s;
 }
 #myVideo {

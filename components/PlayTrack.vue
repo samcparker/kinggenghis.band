@@ -1,7 +1,7 @@
 <template>
 <div>
 
-  <p class="lead">
+  <p class="lead" style="font-size: 30px">
  <audio ref="song">
   <source :src="doc.src" type="audio/mpeg">
 </audio> 
@@ -13,7 +13,7 @@
 
 <v-container style="max-width: 1000px">
 <div :style="style" ref="lyrics" class="mb-4">
-    <nuxt-content :document="doc"/>
+    <nuxt-content class="" :document="doc"/>
 </div>
 </v-container>
         
@@ -28,7 +28,15 @@ export default {
         }
     },
     props: {
-        doc: Object
+        doc: Object,
+        id: Number
+    },
+    mounted () {
+        this.$nextTick(() => {
+            this.$refs.song.addEventListener("ended", (event) => {
+                this.$emit('play', this.id + 1);
+            });
+        });
     },
     methods: {
         getIcon() {
@@ -47,22 +55,23 @@ export default {
         playPause() {
             if (this.$refs.song.paused) {
                 this.$emit('play', this.id);
-                this.playing = true;
-                this.$refs.song.play();
-                this.$refs.song.currentTime = 0;
             }
             else {
                 this.stop();
             }
-
-            
-            
         },
         stop() {
-            this.$refs.lyrics.scrollTop = 0;
             this.playing = false;
             this.$refs.song.pause();
             this.$refs.song.currentTime = 0;
+            this.$refs.lyrics.scrollTop = 0;
+        },
+        play() {
+            this.playing = true;
+            this.$refs.song.play();
+        },
+        getId() {
+            return this.$props.doc.id;
         }
     },
     computed: {
@@ -99,8 +108,12 @@ export default {
 }
 </script>
 
-<style scoped>
-.nuxt-content {
-    font-size: 10px;
+<style>
+.nuxt-content p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
+
+
 </style>

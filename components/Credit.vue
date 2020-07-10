@@ -20,11 +20,10 @@ p {
     z-index: 100;
     font-size: 15px;
     padding: 0px 10px 0px 10px;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 p:hover {
-    background-color: white;
-    color: black;
+opacity: 1;
 }
 </style>
